@@ -9,7 +9,7 @@ __An armor effect plugin for Minecraft: Bedrock Edition v1.2.x !__
 
 Introduction
 -------------
-ArmorEffect is a health viewer plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** . The code was written by **CookieCode**.<br>
+ArmorEffect is a health viewer plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** . The code was written by **[CookieCode](https://github.com/CookieCode)** helped by **[CrackerFR](https://github.com/CrackerFR)**.<br>
 
 
 
