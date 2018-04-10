@@ -13,17 +13,22 @@ use pocketmine\item\Item;
 use pocketmine\inventory\PlayerInventory;
 use pocketmine\inventory\ArmorInventory;
 
-//Coded by CookieCode.
+//Coded by CookieCode & CrackerFR.
 
 class Main extends PluginBase implements Listener{
 
 	public function onEnable() {
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
+		$this->getServer()->getLogger()->info(TF::GREEN . $this->prefix . TF::YELLOW . " Plugin enabled by CookieCode");
   }
 
   public function onLoad() {
-    	$this->getLogger()->info(TF::GREEN . "Loading...");
+    $this->getServer()->getLogger()->info(TF::GREEN . "Loading...");
   }
+
+  public function onDisable() {
+		$this->getServer()->getLogger()->info(TF::GREEN . $this->prefix . TF::YELLOW . " Plugin disabled");
+	}
 
   public function onArmorChange(EntityArmorChangeEvent $ev){
     $player = $ev->getEntity();
@@ -31,8 +36,8 @@ class Main extends PluginBase implements Listener{
     $Oid = $ev->getOldItem()->getID();
 
     if($player instanceof Player){
-    //Chain Helmet
-    if($Nid === 302){
+      //Chain Helmet
+      if($Nid === 302){
         $effect = Effect::getEffect(16);
         $effect->setVisible(false);
         $effect->setAmplifier(0);
@@ -40,51 +45,51 @@ class Main extends PluginBase implements Listener{
         $player->addEffect($effect);
       
         $effect1 = Effect::getEffect(5);
-      $effect1->setVisible(false);
-      $effect1->setAmplifier(0);
-      $effect1->setDuration(9999999);
-      $player->addEffect($effect1);
+        $effect1->setVisible(false);
+        $effect1->setAmplifier(0);
+        $effect1->setDuration(9999999);
+        $player->addEffect($effect1);
       
-    }elseif($Oid === 302){
-      $player->removeEffect(16);
-      $player->removeEffect(5);
-    }
+      }elseif($Oid === 302){
+        $player->removeEffect(16);
+        $player->removeEffect(5);
+      }
     
-    //Chain Chestplate
-    if($Nid === 303){
-      $effect = Effect::getEffect(21);
-      $effect->setVisible(false);
-      $effect->setAmplifier(4);
-      $effect->setDuration(9999999);
-      $player->addEffect($effect);
+      //Chain Chestplate
+      if($Nid === 303){
+        $effect = Effect::getEffect(21);
+        $effect->setVisible(false);
+        $effect->setAmplifier(4);
+        $effect->setDuration(9999999);
+        $player->addEffect($effect);
       
-    }elseif($Oid === 303){
-      $player->removeEffect(21);
-    }
+      }elseif($Oid === 303){
+        $player->removeEffect(21);
+      }
     
-    //Chain Leggings
-    if($Nid === 304){
-      $effect = Effect::getEffect(11);
-      $effect->setVisible(false);
-      $effect->setAmplifier(1);
-      $effect->setDuration(9999999);
-      $player->addEffect($effect);
+      //Chain Leggings
+      if($Nid === 304){
+        $effect = Effect::getEffect(11);
+        $effect->setVisible(false);
+        $effect->setAmplifier(1);
+        $effect->setDuration(9999999);
+        $player->addEffect($effect);
       
-    }elseif($Oid === 304){
-      $player->removeEffect(11);
-    }
+      }elseif($Oid === 304){
+        $player->removeEffect(11);
+      }
     
-    //Chain Boots
-    if($Nid === 305){
-      $effect = Effect::getEffect(3);
-      $effect->setVisible(false);
-      $effect->setAmplifier(1);
-      $effect->setDuration(9999999);
-      $player->addEffect($effect);
+      //Chain Boots
+      if($Nid === 305){
+        $effect = Effect::getEffect(3);
+        $effect->setVisible(false);
+        $effect->setAmplifier(1);
+        $effect->setDuration(9999999);
+        $player->addEffect($effect);
       
-    }elseif($Oid === 305){
-      $player->removeEffect(3);
+      }elseif($Oid === 305){
+        $player->removeEffect(3);
+      }
     }
   }
-}
 }
