@@ -2,7 +2,7 @@
 ArmorEffect
 ===================
 
-
+[![](https://poggit.pmmp.io/shield.state/ArmorEffect)](https://poggit.pmmp.io/p/ArmorEffect)
 
 __An armor effect plugin for Minecraft: Bedrock Edition v1.2.x !__
 
