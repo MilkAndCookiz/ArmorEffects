@@ -1,5 +1,6 @@
-name: ArmorEffect
-main: CookieCode\ArmorEffect\Main
-author: CookieCode
-version: 1.0
-api: [3.0.0-ALPHA11, 3.0.0-ALPHA12]
+name: ArmorEffects
+main: ArmorEffects\Main
+version: 2.0.0
+api: 5.18.0
+author: MilkAndCookiz
+description: Adds effects when any armor is equipped.

@@ -1,0 +1,120 @@
+# ArmorEffects 2.0 Configuration
+
+# Armor Effects Configuration
+# Format:
+# armor_type:
+#   effect: effect_name
+#   duration: duration_in_seconds
+#   amplifier: effect_level (1 = level I, 2 = level II, etc.)
+#   visible: true/false (whether the effect particles are visible)
+
+armor_effects:
+  # Chainmail Armor
+  chainmail_helmet:
+    effect: water_breathing
+    duration: 9999999
+    amplifier: 5
+    visible: false
+  chainmail_chestplate:
+    effect: resistance
+    duration: 9999999
+    amplifier: 5
+    visible: false
+  chainmail_leggings:
+    effect: speed
+    duration: 9999999
+    amplifier: 5
+    visible: false
+  chainmail_boots:
+    effect: jump_boost
+    duration: 9999999
+    amplifier: 5
+    visible: false
+    
+  # Leather Armor
+  # leather_helmet:
+  #   effect: night_vision
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+  # leather_chestplate:
+  #   effect: resistance
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+  # leather_leggings:
+  #   effect: speed
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+  # leather_boots:
+  #   effect: jump_boost
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+
+  # Iron Armor
+  # iron_helmet:
+  #   effect: night_vision
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+  # iron_chestplate:
+  #   effect: resistance
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+  # iron_leggings:
+  #   effect: speed
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+  # iron_boots:
+  #   effect: jump_boost
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+
+  # Gold Armor
+  # gold_helmet:
+  #   effect: night_vision
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+  # gold_chestplate:
+  #   effect: fire_resistance
+  #   duration: 9999999
+  #   amplifier: 1
+  #   visible: false
+  # gold_leggings:
+  #   effect: jump_boost
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+  # gold_boots:
+  #   effect: speed
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+
+  # Diamond Armor
+  # diamond_helmet:
+  #   effect: night_vision
+  #   duration: 9999999
+  #   amplifier: 2
+  #   visible: false
+  # diamond_chestplate:
+  #   effect: resistance
+  #   duration: 9999999
+  #   amplifier: 3
+  #   visible: false
+  # diamond_leggings:
+  #   effect: speed
+  #   duration: 9999999
+  #   amplifier: 3
+  #   visible: false
+  # diamond_boots:
+  #   effect: jump_boost
+  #   duration: 9999999
+  #   amplifier: 3
+  #   visible: false
