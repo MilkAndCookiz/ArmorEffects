@@ -1,52 +1,53 @@
-
-ArmorEffect [Off]
+# ArmorEffect [2.0]
 ===================
 
-[![](https://poggit.pmmp.io/shield.state/ArmorEffect)](https://poggit.pmmp.io/p/ArmorEffect)
-
-__An armor effect plugin for Minecraft: Bedrock Edition v1.2.x !__
+__An armor effect plugin for Minecraft: Bedrock Edition, now compatible with PocketMine v5.x!__
 
 
-Introduction
--------------
-ArmorEffect is a armor effect plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** . The code was written by **[CookieCode](https://github.com/CookieCode)** helped by **[CrackerFR](https://github.com/CrackerFR)**.<br>
+## Introduction
+ArmorEffect is a plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** that grants special effects when players equip specific armor pieces. Originally developed several years ago, the plugin has been fully updated to support the latest version of Minecraft Bedrock Edition by **MilkAndCookiz**.
+
+Contributions and improvements are welcome as the plugin continues to evolve with new features and configuration options.
 
 
-
-However, ArmorEffect still has a long way to go. We welcome contributions.
-
-Objective
--------------
-
-* Be able to configure the plugin.
+## Objective
+* Provide configurable armor-based effects for players.
+* Offer an easily customizable `config.yml` for user-defined effects based on armor type.
+* Support the latest PocketMine-MP releases.
 
 
-Help & Support
--------------
+## Help & Support
+If you encounter any issues, feel free to open a ticket on GitHub! We are happy to help troubleshoot and provide support for setting up and configuring the plugin.
 
+## Installation
+1. **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** - ArmorEffect works only with the PocketMine server software.
+2. **[DevTools](https://github.com/pmmp/PocketMine-DevTools)** - Used to load and develop plugins from folders.
 
-If you have any issues with ArmorEffect, do not be afraid to open the issue, we will try to help you !
+*Important Note:* 
+The `master` branch is the officially supported and stable version. Other branches may contain experimental features and should be used with caution.
 
-Installation
--------------
-* [PocketMine](https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/) - ArmorEffect work only with PocketMine software.
-* [DevTools](https://github.com/pmmp/PocketMine-DevTools) - Essential to load plugins folders.
+## Configuration
+ArmorEffect is highly customizable, allowing you to configure armor pieces and their corresponding effects via the `config.yml` file. You can specify different effects for helmets, chestplates, leggings, and boots, with adjustable duration and amplifier levels.
 
+Here is an example of the `config.yml` format:
 
-NOTE: **The master branch is the only officially supported branch.**
-_All other branches are in testing and may be unstable. Do not use builds from other branches unless you are sure you understand the risks._
+```yaml
+armor_effects:
+  leather_helmet:
+    effect: "speed"
+    duration: 60
+    amplifier: 1
+    visible: true
+  iron_chestplate:
+    effect: "strength"
+    duration: 120
+    amplifier: 2
+    visible: true
+```
 
-License
--------------
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
+The `effect` field corresponds to the available Minecraft effect names (e.g., `speed`, `strength`), and the plugin will apply these effects when players equip the respective armor pieces.
 
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
+## License
+This program is licensed under the **GNU General Public License v3.0** or later. You are free to redistribute and/or modify it under the terms of the GPL.
 
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+For more information, please refer to the full license [here](http://www.gnu.org/licenses/gpl-3.0.html).
