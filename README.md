@@ -1,11 +1,11 @@
-# ArmorEffect [2.0]
+# ArmorEffects [2.0]
 ===================
 
 __An armor effect plugin for Minecraft: Bedrock Edition, now compatible with PocketMine v5.x!__
 
 
 ## Introduction
-ArmorEffect is a plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** that grants special effects when players equip specific armor pieces. Originally developed several years ago, the plugin has been fully updated to support the latest version of Minecraft Bedrock Edition by **MilkAndCookiz**.
+ArmorEffects is a plugin for **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)** that grants special effects when players equip specific armor pieces. Originally developed several years ago, the plugin has been fully updated to support the latest version of Minecraft Bedrock Edition by **MilkAndCookiz**.
 
 Contributions and improvements are welcome as the plugin continues to evolve with new features and configuration options.
 
